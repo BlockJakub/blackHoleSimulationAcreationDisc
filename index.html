@@ -16,11 +16,21 @@
             display: block;
             background: #000;
         }
+
+        .watermark {
+            position:absolute;
+            left:20px;
+            bottom:20px;
+            opacity: 82%;
+            background-image: url("img
+/logo_jacubaVisualsWeb_V1.3.svg
+");
+        }
     </style>
 </head>
 
 <body>
-    <canvas id="vesmir"></canvas>
+    <canvas id="vesmir"><div class="watermark"></div></canvas>
     <button id="githubBtn"
         style="position:fixed;top:16px;right:16px;z-index:10;padding:8px 16px;background:#222;color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px #0008;cursor:pointer;font-size:16px;">GitHub</button>
     <script>
